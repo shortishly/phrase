@@ -40,5 +40,3 @@ PLT_APPS = \
 
 
 include erlang.mk
-
-all:: dialyze eunit
