@@ -15,6 +15,7 @@
 #
 PROJECT = phrase
 PROJECT_DESCRIPTION = Erlang Phrasexpr
+PROJECT_VERSION = ${shell git describe --tags}
 
 
 SHELL_OPTS = \
