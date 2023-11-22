@@ -40,6 +40,15 @@ PLT_APPS = \
 	tools
 
 
-include erlang.mk
+define HEX_TARBALL_EXTRA_METADATA
+#{
+	licenses => [<<"Apache-2">>],
+	links => #{
+		<<"GitHub">> => <<"https://github.com/shortishly/phrase">>
+	}
+}
+endef
+
+include $(if $(ERLANG_MK_FILENAME),$(ERLANG_MK_FILENAME),erlang.mk)
 
 app:: rebar.config
